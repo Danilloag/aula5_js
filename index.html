@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5 de JS</title>
+</head>
+
+<body>
+
+
+    <script>
+        //Cachorro, gato e coelho: Banho e tosa
+        //Cavalo, cabra e jumento: Encaminha para veterinário especializado
+        //Rato: gaiola especial
+        //passarinho: implante de rastreador
+        //Para todos acima vendemos ração
+        //Outros animais: infelizmente não podemos atender.
+
+        let animalEstimacao = prompt('Qual o seu animal de estimação?');
+
+        switch (animalEstimacao.toLocaleLowerCase()) {
+            case 'cachorro':
+            case 'gato':
+            case 'coelho':
+                alert(`Temos o serviço de banho e tosa, além de ração para o seu ${animalEstimacao}`)
+                break;
+            case 'cavalo':
+            case 'cabra':
+            case 'jumento':
+                alert(`Possuímos ração e encaminhamos o seu ${animalEstimacao} para veterinário especializado.`)
+                break;
+            case 'rato':
+                alert(`Para o seu ${animalEstimacao} possuímos gaiola especial e ração.`)
+                break;
+            case 'passarinho':
+                alert(`Para o seu ${animalEstimacao} possuímos implante de rastreador e ração.`)
+                break;
+            default:
+                alert(`Desculpe, não podemos atender o seu ${animalEstimacao}`);
+        }
+    </script>
+</body>
+
+</html>
